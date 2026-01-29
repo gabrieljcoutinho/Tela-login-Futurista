@@ -1,0 +1,312 @@
+.movimentacaoFormulario {
+    padding-left: 50rem;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 340px;
+    background: linear-gradient(145deg, #0f0f0f 0%, #080808 50%, #0a0a0a 100%);
+    color: #ffffff;
+    border: 1px solid rgba(212, 168, 75, 0.15);
+    overflow: hidden;
+    box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.8);
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+.form-container::before {
+    content: "";
+    display: block;
+    height: 3px;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            #b8922f 20%,
+            #d4a84b 50%,
+            #b8922f 80%,
+            transparent 100%);
+}
+
+.form-content {
+    padding: 22px 22px 22px;
+}
+
+.title-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 22px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(90deg, #d4a84b, transparent) 1;
+}
+
+.title-icon {
+    width: 26px;
+    height: 26px;
+    color: #d4a84b;
+}
+
+.title {
+    font-family: Impact, "Arial Black", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #ffffff 30%, #999999 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-group {
+    background: linear-gradient(135deg,
+            rgba(10, 22, 40, 0.8) 0%,
+            rgba(7, 18, 34, 0.9) 100%);
+    border: 1px solid #1a2d47;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.input-group::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 0;
+    background: linear-gradient(180deg, #d4a84b, #00d4ff);
+    transition: height 0.3s ease;
+}
+
+.input-group:focus-within::before {
+    height: 100%;
+}
+
+.input-group:focus-within {
+    border-color: #d4a84b;
+    transform: translateX(3px);
+}
+
+.input-group:hover {
+    border-color: #2a4a70;
+}
+
+.input-icon {
+    width: 34px;
+    height: 34px;
+    background: linear-gradient(135deg,
+            rgba(30, 58, 95, 0.7) 0%,
+            rgba(20, 40, 70, 0.5) 100%);
+    border: 1px solid rgba(74, 158, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.input-group:focus-within .input-icon {
+    background: #0a0a0a;
+    border-color: #d4a84b;
+}
+
+.input-icon svg {
+    width: 16px;
+    height: 16px;
+    color: #00d4ff;
+    transition: all 0.3s ease;
+}
+
+.input-group:focus-within .input-icon svg {
+    color: #d4a84b;
+}
+
+.input-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.input-group label {
+    display: block;
+    color: #6b7280;
+    font-size: 0.55rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    transition: all 0.3s ease;
+}
+
+.input-group:focus-within label {
+    color: #d4a84b;
+}
+
+.input-group input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.input-group input::placeholder {
+    color: #3a4a5a;
+}
+
+.forgot {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 6px;
+}
+
+.forgot a {
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 0.65rem;
+    transition: color 0.3s ease;
+}
+
+.forgot a:hover {
+    color: #d4a84b;
+}
+
+.sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    background: linear-gradient(135deg, #d4a84b 0%, #b8922f 100%);
+    padding: 10px;
+    color: #000;
+    border: none;
+    font-weight: 700;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 6px;
+    box-sizing: border-box;
+}
+
+.sign:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(212, 168, 75, 0.4);
+}
+
+.sign-arrow {
+    transition: transform 0.3s ease;
+}
+
+.sign:hover .sign-arrow {
+    transform: translateX(4px);
+}
+
+.social-message {
+    display: flex;
+    align-items: center;
+    padding-top: 18px;
+    margin-bottom: 12px;
+}
+
+.line {
+    height: 1px;
+    flex: 1;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.1),
+            transparent);
+}
+
+.social-message .message {
+    padding: 0 12px;
+    font-size: 0.55rem;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.social-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.social-icons .icon {
+    height: 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background: linear-gradient(135deg,
+            rgba(10, 22, 40, 0.8) 0%,
+            rgba(7, 18, 34, 0.9) 100%);
+    border: 1px solid #1a2d47;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.social-icons .icon:hover {
+    transform: translateY(-3px);
+    border-color: #d4a84b;
+}
+
+.social-icons .icon svg {
+    height: 18px;
+    width: 18px;
+    fill: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.social-icons .icon:hover svg {
+    fill: #d4a84b;
+}
+
+.social-icons .icon span {
+    font-size: 0.5rem;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.social-icons .icon:hover span {
+    color: #d4a84b;
+}
+
+.signup {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #6b7280;
+    margin-top: 16px;
+}
+
+.signup a {
+    color: #d4a84b;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup a:hover {
+    color: #ffffff;
+}
